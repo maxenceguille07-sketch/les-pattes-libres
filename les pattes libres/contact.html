@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Les Pattes Libres</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Contactez-nous</h1>
+        <p>Votre projet d'adoption commence ici</p>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="adopter.html">Adopter</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Nos informations</h2>
+            <p><strong>Horaires :</strong> du mardi au samedi, de 10 h à 18 h.</p>
+            <p><strong>Adresse :</strong> 10 rue des Animaux, 28000 Chartres.</p>
+            <p><strong>Téléphone :</strong> 02 00 00 00 00</p>
+            <p><strong>Email :</strong> contact@lespatteslibres.fr</p>
+            <p><strong>Accès :</strong> parking disponible à proximité.</p>
+        </section>
+
+        <section>
+            <h2>Demande d'adoption</h2>
+
+            <form action="#" method="post">
+
+                <label for="nom">Nom et prénom :</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="email">Adresse email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telephone">Téléphone :</label>
+                <input type="tel" id="telephone" name="telephone" required>
+
+                <label for="animal">Animal souhaité :</label>
+                <select id="animal" name="animal" required>
+                    <option value="">Choisir un animal</option>
+                    <option value="Rex">Rex</option>
+                    <option value="Mia">Mia</option>
+                    <option value="Oscar">Oscar</option>
+                    <option value="Luna">Luna</option>
+                    <option value="Max">Max</option>
+                    <option value="Simba">Simba</option>
+                </select>
+
+                <label for="logement">Votre logement :</label>
+                <select id="logement" name="logement" required>
+                    <option value="">Choisir une réponse</option>
+                    <option value="Appartement">Appartement</option>
+                    <option value="Maison">Maison</option>
+                    <option value="Autre">Autre</option>
+                </select>
+
+                <label for="autres">Avez-vous d'autres animaux ?</label>
+                <select id="autres" name="autres" required>
+                    <option value="">Choisir une réponse</option>
+                    <option value="Oui">Oui</option>
+                    <option value="Non">Non</option>
+                </select>
+
+                <label for="projet">Présentez votre projet d'adoption :</label>
+                <textarea id="projet" name="projet" rows="5" required></textarea>
+
+                <label class="accord">
+                    <input type="checkbox" name="accord" required>
+                    J'accepte l'utilisation de mes données pour traiter ma demande.
+                </label>
+
+                <button type="submit">Envoyer ma demande</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Les Pattes Libres - Tous droits réservés</p>
+        <p>Contact : contact@lespatteslibres.fr</p>
+    </footer>
+
+</body>
+</html>
